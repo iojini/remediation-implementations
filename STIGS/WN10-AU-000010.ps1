@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    This PowerShell script sets the password history to 24 passwords.
+    This PowerShell script enables success auditing for Credential Validation events.
 
 .NOTES
     Author          : Irene Ojini
