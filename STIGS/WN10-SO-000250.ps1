@@ -14,7 +14,7 @@
     STIG-ID         : WN10-SO-000250  
 
 .USAGE
-    PS C:\> .\STIG-ID-WN10-AU-WN10-SO-000250.ps1 
+    PS C:\> .\STIG-ID-WN10-SO-000250.ps1 
 #>
 
 # Define registry path and target value
