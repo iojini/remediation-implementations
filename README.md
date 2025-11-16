@@ -4,5 +4,5 @@
 
 | STIG ID | Description                   | Language   | Link                                                     |
 |------------------|-------------------------------|------------|----------------------------------------------------------|
-| 10001            | Critical buffer overflow in XYZ software | PowerShell | [View Remediation](https://github.com/joshcybertest/programmatic-vulnerability-remediations/blob/main/scripts/powershell-template.ps1) |
-| 10002            | SQL injection vulnerability in ABC application | BASH       | [View Remediation](https://github.com/joshcybertest/programmatic-vulnerability-remediations/blob/main/scripts/bash-template.sh) |
+| WN10-00-000031            | Utilizes BitLocker PIN for pre-boot authentication | PowerShell | [View Remediation](https://github.com/iojini/remediation-implementations/blob/main/STIGS/WN10-00-000031.ps1) |
+| WN10-AC-000005            | Configures account lockout duration to 15 minutes or greater | PowerShell       | [View Remediation](https://github.com/iojini/remediation-implementations/blob/main/STIGS/WN10-AC-000005.ps1) |
