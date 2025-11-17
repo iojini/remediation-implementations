@@ -13,8 +13,18 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000370  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-CC-000370.ps1 
+.SECURITY_RATIONALE
+    The convenience PIN must be disabled because:
+    - PINs use a limited character set (0-9) making them vulnerable to brute force
+    - Typical PINs are 4-6 digits vs 8+ character passwords with complexity
+    - PIN keyspace: 10^6 (1 million) combinations for 6-digit PIN
+    - Password keyspace: 94^8 (6+ quadrillion) combinations for 8-character complex password
+    - PINs are susceptible to shoulder surfing and observation attacks
+    - Automated tools like "Password Stuffer" can rapidly attempt PIN combinations
+
+.IMPACT
+    Users will need to authenticate using their full domain credentials instead of a PIN.
+    This may increase login time but significantly improves security posture.
 #>
 
 $RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\System"
