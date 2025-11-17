@@ -13,8 +13,12 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-UR-000010  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-UR-000010.ps1 
+.DESCRIPTION
+    Security Rationale: The "Access this computer from the network" privilege controls who can 
+    connect to the system over the network to access shared resources like file shares, printers, 
+    and remote administration tools. Limiting this to Administrators and Remote Desktop Users 
+    helps to prevents lateral movement attacks, unauthorized network share access, privilege 
+    escalation attacks, and insider threats from compromised standard user accounts. 
 #>
 
 # Export current security policy
