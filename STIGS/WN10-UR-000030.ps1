@@ -13,8 +13,13 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-UR-000030  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-UR-000030.ps1 
+.SECURITY RATIONALE
+    The "Back up files and directories" privilege allows users to bypass normal
+    file permissions and access ANY file on the system, including encrypted or
+    restricted data. Limiting this to Administrators prevents:
+    - Unauthorized data exfiltration disguised as backups
+    - Privilege escalation attacks
+    - Insider threats from compromised standard user accounts 
 #>
 
 # Export current security policy
