@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    This PowerShell script sets the registry value to ensure Group Policy objects are reprocessed even if they haven't changed.
+    This PowerShell script disables the application compatibility program inventory to prevent it from collecting data and sending the information to Microsoft.
 
 .NOTES
     Author          : Irene Ojini
