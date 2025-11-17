@@ -19,7 +19,7 @@
 
 $RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection"
 $ValueName = "AllowTelemetry"
-$ValueData = 1    # set to 0 for "Security", 1 for "Basic", or 2 for limited "Enhanced" as needed
+$ValueData = 1    
 
 # Create the registry key if it doesn't exist
 if (-not (Test-Path $RegPath)) {
