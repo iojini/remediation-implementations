@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    This PowerShell script enables success auditing for File Share access.
+    This PowerShell script enables auditing of file share access.
 
 .NOTES
     Author          : Irene Ojini
