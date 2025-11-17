@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    This PowerShell script enables success auditing for Credential Validation events.
+    This PowerShell script enables auditing for credential validation successes.
 
 .NOTES
     Author          : Irene Ojini
