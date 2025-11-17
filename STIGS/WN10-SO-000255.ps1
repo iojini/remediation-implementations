@@ -13,8 +13,13 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-SO-000255  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-SO-000255.ps1 
+.DESCRIPTION
+    Security Rationale: User Account Control (UAC) prevents privilege escalation by controlling 
+    elevation requests. Automatically denying elevation requests for standard users prevents 
+    credential theft through fake UAC prompts, stops social engineering attacks that trick users 
+    into entering admin passwords, prevents credential exposure in compromised standard user sessions, 
+    and enforces separation of duties by requiring administrative tasks to be performed from dedicated 
+    admin accounts rather than elevating from standard user sessions. 
 #>
 
 # Define registry path and target value
