@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    This PowerShell script disables camera access from the lock screen.
+    This PowerShell script configures an audit of account logon credential validation failures.
 
 .NOTES
     Author          : Irene Ojini
