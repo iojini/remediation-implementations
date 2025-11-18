@@ -13,8 +13,14 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000205
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-CC-000205.ps1 
+.DESCRIPTION
+    Security Rationale: Full telemetry collects complete memory dumps and detailed system state 
+    information that can contain sensitive data including passwords, encryption keys, classified 
+    information, healthcare records, and intellectual property. Limiting telemetry to Basic level 
+    prevents sensitive data exposure through memory dumps, stops compliance violations for GDPR HIPAA 
+    and export control regulations, protects intellectual property from transmission outside the 
+    enterprise, ensures data sovereignty requirements are met, and maintains control over potentially 
+    classified or confidential information in system memory. 
 #>
 
 $RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection"
