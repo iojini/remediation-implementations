@@ -13,8 +13,14 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000235
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-CC-000235.ps1 
+.DESCRIPTION
+    Security Rationale: Windows Defender SmartScreen analyzes file reputation and warns about 
+    potentially malicious downloads, but users frequently bypass warnings due to warning fatigue, 
+    social engineering, or task focus. Preventing bypass of SmartScreen file warnings blocks malware 
+    downloads from phishing campaigns, stops drive-by downloads of unverified executables, prevents 
+    ransomware delivery through fake software updates, protects against social engineering attacks 
+    that pressure users to ignore warnings, and ensures cloud-based threat intelligence is enforced 
+    rather than left to user judgment. 
 #>
 
 $RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\MicrosoftEdge\PhishingFilter"
