@@ -13,8 +13,13 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000295  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-CC-000295.ps1 
+.DESCRIPTION
+    Security Rationale: RSS feeds can automatically download file attachments without user awareness, 
+    creating a malware delivery vector. Preventing automatic attachment downloads stops compromised 
+    feeds from silently delivering malicious executables, blocks drive-by malware distribution through 
+    trusted news sources, prevents mass infections when legitimate feeds are hijacked, requires user 
+    interaction before files are downloaded, and provides opportunity to verify attachment legitimacy 
+    and scan for threats before opening. 
 #>
 
 $RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Internet Explorer\Feeds"
