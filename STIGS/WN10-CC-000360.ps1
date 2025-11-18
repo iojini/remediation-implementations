@@ -13,8 +13,13 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000360  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-CC-000360.ps1 
+.DESCRIPTION
+    Security Rationale: Digest authentication uses the weak MD5 hashing algorithm which has known 
+    vulnerabilities and can be cracked with modern hardware. Disabling Digest authentication for 
+    WinRM prevents man-in-the-middle attacks where attackers intercept and crack authentication hashes, 
+    stops replay attacks using captured credentials, eliminates the risk of credential theft during 
+    remote management sessions, and forces the use of stronger authentication methods like Kerberos 
+    or certificate-based authentication. 
 #>
 
 $RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WinRM\Client"
