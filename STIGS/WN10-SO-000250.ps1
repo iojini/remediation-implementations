@@ -13,8 +13,12 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-SO-000250  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-SO-000250.ps1 
+.DESCRIPTION
+    Security Rationale: User Account Control (UAC) limits privilege escalation by requiring 
+    acknowledgment for elevated tasks. Prompting administrators for consent on the secure desktop 
+    prevents silent privilege escalation by malware, blocks malicious software from spoofing or 
+    manipulating UAC prompts, creates an audit trail of elevated actions, and ensures administrators 
+    consciously approve privilege changes in an isolated environment that malware cannot interact with. 
 #>
 
 # Define registry path and target value
