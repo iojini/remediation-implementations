@@ -13,8 +13,13 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000310  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-CC-000310.ps1 
+.DESCRIPTION
+    Security Rationale: Allowing users to modify installation options enables security control bypass 
+    through installing to unprotected locations, disabling security features, or selecting dangerous 
+    components. Preventing installation option changes stops DLL hijacking attacks in user-writable 
+    directories, prevents application whitelisting bypass, ensures consistent security configurations 
+    across the organization, blocks privilege escalation through malicious installation paths, and 
+    maintains administrator control over security-relevant installation parameters. 
 #>
 
 
