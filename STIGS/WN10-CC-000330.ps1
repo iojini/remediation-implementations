@@ -13,8 +13,13 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000330  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-CC-000330.ps1 
+.DESCRIPTION
+    Security Rationale: Basic authentication transmits credentials as base64-encoded text which is 
+    trivially decoded, not encrypted. Disabling Basic authentication for WinRM client prevents 
+    credential exposure when connecting to remote systems, stops rogue server attacks that capture 
+    administrator passwords, eliminates man-in-the-middle attacks through protocol downgrade, protects 
+    against DNS spoofing scenarios, and forces the use of strong authentication methods like Kerberos 
+    or certificates that never transmit passwords over the network. 
 #>
 
 $RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\WinRM\Client"
