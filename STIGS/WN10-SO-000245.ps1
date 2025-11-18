@@ -13,8 +13,13 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-SO-000245  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-SO-000245.ps1 
+.DESCRIPTION
+    Security Rationale: User Account Control (UAC) Admin Approval Mode ensures the built-in 
+    Administrator account operates with privilege separation instead of unrestricted full privileges. 
+    Enabling this prevents malware from automatically executing with admin rights, requires consent 
+    for elevated operations through UAC prompts, limits the attack surface by starting applications 
+    with standard user tokens, and protects against drive-by downloads and browser exploits that would 
+    otherwise gain immediate full system access. 
 #>
 
 # Define registry path and setting
