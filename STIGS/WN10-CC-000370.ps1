@@ -13,14 +13,13 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000370  
 
-.SECURITY_RATIONALE
-    The convenience PIN must be disabled because:
-    - PINs use a limited character set (0-9) making them vulnerable to brute force
-    - Typical PINs are 4-6 digits vs 8+ character passwords with complexity
-    - PIN keyspace: 10^6 (1 million) combinations for 6-digit PIN
-    - Password keyspace: 94^8 (6+ quadrillion) combinations for 8-character complex password
-    - PINs are susceptible to shoulder surfing and observation attacks
-    - Automated tools like "Password Stuffer" can rapidly attempt PIN combinations
+.DESCRIPTION
+    Security Rationale: The convenience PIN feature allows users to sign in with a short PIN 
+    instead of a password, significantly weakening authentication security. Disabling this prevents 
+    brute force attacks against short PINs with limited combinations, eliminates shoulder surfing 
+    risks where PINs are easily observed, stops password stuffing attacks using common PIN patterns, 
+    and ensures users authenticate with full-strength complex passwords instead of easily compromised 
+    4-6 digit PINs.
 
 .IMPACT
     Users will need to authenticate using their full domain credentials instead of a PIN.
