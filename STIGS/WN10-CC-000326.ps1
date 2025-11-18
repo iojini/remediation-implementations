@@ -13,8 +13,13 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000326  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-CC-000326.ps1 
+.DESCRIPTION
+    Security Rationale: PowerShell is the primary tool used by attackers for fileless malware, 
+    living-off-the-land techniques, and post-exploitation activities. Enabling script block logging 
+    records the actual decoded content of PowerShell commands and scripts, providing visibility into 
+    obfuscated attacks, documenting malware execution chains, enabling incident response timeline 
+    reconstruction, detecting credential theft and lateral movement, and creating forensic evidence 
+    for investigation of compromises that operate entirely in memory without touching disk. 
 #>
 
 $RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging"
