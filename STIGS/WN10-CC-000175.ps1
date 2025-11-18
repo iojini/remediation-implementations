@@ -13,8 +13,14 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000175
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-CC-000175.ps1 
+.DESCRIPTION
+    Security Rationale: The Application Compatibility Program Inventory collects detailed information 
+    about all installed applications including versions, file paths, and system configuration, then 
+    transmits this data to Microsoft. Disabling this inventory prevents disclosure of security tool 
+    details that attackers could use for defense evasion, stops exposure of proprietary internal 
+    applications and competitive intelligence, prevents attack surface mapping through complete 
+    software inventory with version numbers, protects operational security by hiding mission-critical 
+    applications, and maintains control over sensitive system configuration information. 
 #>
 
 $RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\AppCompat"
