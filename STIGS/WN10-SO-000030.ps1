@@ -13,8 +13,13 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-SO-000030  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-SO-000030.ps1 
+.DESCRIPTION
+    Security Rationale: Audit policy subcategories provide granular control over security logging 
+    instead of broad legacy categories. Enabling subcategories allows precise auditing of specific 
+    security events, reduces log volume without losing critical data, enables faster forensic analysis 
+    and incident response, improves SIEM accuracy by eliminating noise, and ensures compliance 
+    requirements are met with targeted audit trails rather than overwhelming logs filled with 
+    irrelevant events. 
 #>
 
 
