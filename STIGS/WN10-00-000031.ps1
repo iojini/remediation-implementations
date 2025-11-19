@@ -13,8 +13,15 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-00-000031  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-00-000031.ps1 
+.DESCRIPTION
+    Security Rationale: BitLocker with TPM-only automatically unlocks drives at boot allowing anyone 
+    with physical access to reach Windows login screen and exploit vulnerabilities. Requiring pre-boot 
+    PIN provides two-factor authentication combining hardware TPM possession with knowledge factor, 
+    prevents stolen or lost devices from booting past encryption barrier, protects against evil maid 
+    attacks installing malware during brief physical access, mitigates Windows login bypass techniques, 
+    ensures HIPAA PCI-DSS and NIST 800-171 compliance for data at rest protection, safeguards 
+    classified information trade secrets and patient records on mobile devices, and creates defense in 
+    depth with separate pre-boot and OS-level authentication barriers. 
 #>
 
 
