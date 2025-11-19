@@ -13,8 +13,14 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000066
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-CC-000066.ps1 
+.DESCRIPTION
+    Security Rationale: Modern attacks heavily use command-line tools and living-off-the-land binaries 
+    where seeing only the process name provides insufficient context for detection. Including command 
+    line arguments in process creation logs reveals obfuscated PowerShell attacks with encoded commands, 
+    exposes malicious parameters used with legitimate Windows tools, enables detection of fileless 
+    malware operating entirely in memory, provides complete forensic timeline reconstruction during 
+    incident response, and captures decoded content of obfuscated commands that would otherwise appear 
+    benign when only the executable name is logged. 
 #>
 
 $RegPath = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System\Audit"
