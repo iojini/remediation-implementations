@@ -13,8 +13,16 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-AC-000005
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-AC-000005.ps1 
+.DESCRIPTION
+    Security Rationale: Account lockout duration controls how long accounts remain locked after 
+    exceeding failed login thresholds. Setting 15-minute minimum duration slows automated brute force 
+    attacks by 93% reducing attempts from 300 per hour to 20 per hour, provides security teams 
+    detection and response windows during lockout periods, makes distributed botnet attacks impractical 
+    by preventing rapid successive attempts, enables SIEM pattern correlation and investigation during 
+    extended lockouts, neutralizes password spraying by forcing substantial delays between attempts, 
+    balances security with usability avoiding excessive help desk burden, and ensures legitimate 
+    lockouts are immediately noticed while giving security operations time to investigate before 
+    attackers succeed. 
 #>
 
 # Set account lockout duration to 15 minutes
