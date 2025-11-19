@@ -13,8 +13,15 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-AC-000020  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-AC-000020.ps1 
+.DESCRIPTION
+    Security Rationale: Users naturally resist password changes and will alternate between a small 
+    set of passwords if allowed, completely undermining security policies. Enforcing 24 password 
+    history prevents password reuse after compromise requiring 6+ years before reuse is possible, 
+    ensures effective breach remediation by permanently retiring stolen credentials, eliminates 
+    password pattern predictability that attackers exploit, prevents rapid password cycling to 
+    circumvent security policies, maintains PCI-DSS HIPAA and NIST compliance for password reuse 
+    prevention, and forces genuine password rotation rather than superficial changes between familiar 
+    passwords. 
 #>
 
 try {
