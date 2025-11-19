@@ -13,8 +13,14 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000005
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-CC-000005.ps1 
+DESCRIPTION
+    Security Rationale: Lock screen camera access allows anyone with physical proximity to use the 
+    device camera without authentication, completely bypassing access controls. Disabling this prevents 
+    unauthorized photography of confidential documents and workspace materials, stops capture of security 
+    badges and credentials for cloning or impersonation, eliminates facility reconnaissance through 
+    photographing security equipment and layouts, prevents privacy violations from unauthorized personnel 
+    photography, ensures camera usage requires authenticated access with audit trails for accountability, 
+    and maintains compliance with HIPAA PCI-DSS and NIST 800-171 physical access control requirements. 
 #>
 
 $RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization"
