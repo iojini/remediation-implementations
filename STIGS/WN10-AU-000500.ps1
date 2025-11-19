@@ -13,12 +13,6 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-AU-000500
 
-.TESTED ON
-    Date(s) Tested  : 
-    Tested By       : 
-    Systems Tested  : 
-    PowerShell Ver. : 
-
 .DESCRIPTION
     Security Rationale: Inadequate Application event log size causes rapid log wraparound where 
     critical security events are overwritten before investigation. Configuring 32 MB minimum capacity 
