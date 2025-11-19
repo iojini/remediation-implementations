@@ -13,8 +13,14 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-AU-000585  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-AU-000585.ps1 
+.DESCRIPTION
+    Security Rationale: Failed process creation attempts are critical attack indicators often more 
+    valuable than successful executions. Auditing failures detects malware execution blocked by 
+    antivirus, reveals privilege escalation and reconnaissance probing before attacks succeed, exposes 
+    application whitelisting bypass attempts, identifies credential theft tool usage, captures complete 
+    attack timelines including blocked attempts, enables behavioral analysis distinguishing attacks from 
+    legitimate failures, and allows pattern recognition of systematic probing that indicates compromise 
+    even when individual attempts fail.
 #>
 
 # Ensure subcategory auditing is enabled
