@@ -19,8 +19,15 @@
     Systems Tested  : 
     PowerShell Ver. : 
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-AU-000500.ps1 
+.DESCRIPTION
+    Security Rationale: Inadequate Application event log size causes rapid log wraparound where 
+    critical security events are overwritten before investigation. Configuring 32 MB minimum capacity 
+    prevents loss of application-based attack evidence like SQL injection and web exploits, preserves 
+    malware execution and crash indicators, retains complete forensic timelines during incidents, 
+    maintains security tool detection events from antivirus and DLP solutions, supports compliance 
+    requirements for log retention, prevents attackers from using log flooding to destroy evidence of 
+    initial compromise, and ensures adequate capacity for high-volume security events during active 
+    attacks. 
 #>
 
 # Define the registry path and value
