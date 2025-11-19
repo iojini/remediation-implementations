@@ -13,8 +13,14 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000052  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-CC-000052.ps1 
+.DESCRIPTION
+    Security Rationale: Windows defaults to prioritizing weaker ECC curves with shorter key lengths 
+    during cryptographic negotiations, making connections vulnerable to cipher downgrade attacks and 
+    advanced nation-state capabilities. Prioritizing longer key lengths ensures strongest available 
+    encryption is negotiated first, provides resistance against future quantum computing attacks, 
+    meets NSA Suite B requirements for TOP SECRET classified information, prevents man-in-the-middle 
+    attackers from forcing weak cipher selection, and ensures long-term data confidentiality with 
+    exponentially stronger cryptographic protection. 
 #>
 
 $RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Cryptography\Configuration\SSL\00010002"
