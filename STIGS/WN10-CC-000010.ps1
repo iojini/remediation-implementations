@@ -13,8 +13,14 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000010
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-CC-000010.ps1 
+.DESCRIPTION
+    Security Rationale: Lock screen slide shows display images from the Pictures folder to anyone 
+    with physical proximity when the workstation is locked. Disabling this prevents exposure of 
+    screenshots containing confidential business data, stops display of patient medical records that 
+    violate HIPAA, eliminates classified information leaks to unauthorized personnel, prevents social 
+    engineering reconnaissance from personal photos revealing family and home details, protects against 
+    accidental display of credentials or network diagrams, and ensures sensitive information remains 
+    accessible only to authenticated users. 
 #>
 
 $RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Personalization"
