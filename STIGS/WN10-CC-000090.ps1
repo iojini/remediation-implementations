@@ -13,8 +13,14 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000090
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-CC-000090.ps1 
+.DESCRIPTION
+    Security Rationale: Without reprocessing, attackers who gain temporary administrative access can 
+    disable security controls locally and those malicious changes persist until the Group Policy Object 
+    is modified. Enabling reprocessing ensures unauthorized modifications are automatically reversed 
+    at every refresh cycle, prevents ransomware from permanently disabling Windows Defender, removes 
+    backdoor administrator accounts within two hours, restores disabled audit logging and firewall 
+    settings, limits the attack window for privilege escalation, and maintains continuous security 
+    baseline enforcement without requiring GPO changes. 
 #>
 
 $RegPath = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\Group Policy\{35378EAC-683F-11D2-A89A-00C04FBBCFA2}"
