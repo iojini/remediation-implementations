@@ -13,7 +13,7 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-CC-000005
 
-DESCRIPTION
+.DESCRIPTION
     Security Rationale: Lock screen camera access allows anyone with physical proximity to use the 
     device camera without authentication, completely bypassing access controls. Disabling this prevents 
     unauthorized photography of confidential documents and workspace materials, stops capture of security 
