@@ -13,8 +13,15 @@
     Plugin IDs      : N/A
     STIG-ID         : WN10-AU-000082  
 
-.USAGE
-    PS C:\> .\STIG-ID-WN10-AU-000082.ps1 
+.DESCRIPTION
+    Security Rationale: File share access including administrative shares like C$ and ADMIN$ are 
+    primary vectors for lateral movement and data exfiltration. Auditing successful share access 
+    detects attackers moving laterally through network using administrative shares, identifies 
+    ransomware propagation paths across shared folders, reveals data exfiltration through sequential 
+    sensitive share connections, exposes unauthorized access to confidential network shares, enables 
+    forensic reconstruction of attack timelines with source IPs and user accounts, supports behavioral 
+    analysis detecting abnormal share enumeration patterns, and provides compliance audit trails for 
+    HIPAA PCI-DSS and SOX requirements to track access to sensitive data.
 #>
 
 # Ensure the system uses subcategory audit policy settings
